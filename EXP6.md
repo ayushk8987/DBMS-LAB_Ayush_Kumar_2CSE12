@@ -43,7 +43,7 @@ FROM EMPLOYEE;
 **Question 2:** Display your age in days.
 
 ```sql
-SELECT DATEDIFF(CURDATE(), '2005-06-03') 
+SELECT DATEDIFF(CURDATE(), '2004-06-26') 
 AS AGE_IN_DAYS;
 ```
 
@@ -52,7 +52,7 @@ AS AGE_IN_DAYS;
 +-------------+
 | AGE_IN_DAYS |
 +-------------+
-|        7580 |
+|        7925 |
 +-------------+
 1 row in set (0.001 sec)
 ```
@@ -60,7 +60,7 @@ AS AGE_IN_DAYS;
 **Question 3:** Display your age in months.
 
 ```sql
-SELECT TIMESTAMPDIFF(MONTH, '2005-06-03', CURDATE()) 
+SELECT TIMESTAMPDIFF(MONTH, '2004-06-26', CURDATE()) 
 AS AGE_IN_MONTHS;
 ```
 
@@ -69,7 +69,7 @@ AS AGE_IN_MONTHS;
 +---------------+
 | AGE_IN_MONTHS |
 +---------------+
-|           249 |
+|           260 |
 +---------------+
 1 row in set (0.001 sec)
 ```
